@@ -119,6 +119,51 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        Comma: Comma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA";
+            bindings = <&kp KP_COMMA>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ApostMod: ApostMod {
+            compatible = "zmk,behavior-mod-morph";
+            label = "APOSTMOD";
+            bindings = <&kp APOSTROPHE>, <&kp UNDER>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        PeriodMod: PeriodMod {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PERIODMOD";
+            bindings = <&kp PERIOD>, <&kp GREATER_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        QuoteMod: QuoteMod {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUOTEMOD";
+            bindings = <&kp KP_MINUS>, <&kp DOUBLE_QUOTES>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        SlashMod: SlashMod {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLASHMOD";
+            bindings = <&kp KP_SLASH>, <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -126,11 +171,11 @@
 
         base {
             bindings = <
-&kp ESC    &kp N1    &kp N2    &kp N3     &kp N4     &kp N5    &kp N6  &kp N7     &kp N8     &kp N9    &kp N0     &kp MINUS
-&kp ENTER  &kp B     &kp W     &kp E      &kp R      &kp T     &kp Y   &kp U      &kp I      &kp O     &kp P      &kp BSPC
-&kp TAB    &kp A     &kp S     &kp D      &kp F      &kp G     &kp H   &kp J      &kp K      &kp L     &kp SEMI   &kp APOS
-&kp LBKT   &kp Z     &kp X     &kp C      &kp V      &kp B     &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RBKT
-           &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo 1     &mo 2   &kp LSHFT  &kp LGUI   &kp LALT  &kp LCTRL
+&kp ESC    &kp N1    &kp N2    &kp N3     &kp N4     &kp N5    &kp N6     &kp N7     &kp N8      &kp N9     &kp N0     &kp MINUS
+&kp ENTER  &kp B     &kp L     &kp D      &kp W      &kp Z     &ApostMod  &kp F      &kp O       &kp U      &kp J      &kp BSPC
+&kp TAB    &kp N     &kp R     &kp T      &kp S      &kp G     &kp Y      &kp H      &kp A       &kp E      &kp I      &Comma
+&kp LBKT   &kp Q     &kp X     &kp M      &kp C      &kp V     &kp K      &kp P      &kp PERIOD  &QuoteMod  &SlashMod  &kp RBKT
+           &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo 1     &mo 2      &kp LSHFT  &kp LGUI    &kp LALT   &kp LCTRL
             >;
         };
 
