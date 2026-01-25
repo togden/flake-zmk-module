@@ -1,5 +1,11 @@
-# Anywhy Flake Firmware
+# Anywhy Flake Firmware - Graphite
 
-> **Important**: If you have a board version prior to 1.0, you should use the cofing from Flake_v0.1/v0.2 [branch](https://github.com/anywhy-io/flake-zmk-module/tree/Flake_v0.1/v0.2) and [actions](https://github.com/anywhy-io/flake-zmk-module/actions?query=branch%3AFlake_v0.1%2Fv0.2).
+This is my personal fork of the Anywhy Flake V1.0 firmware. I'm working on modifying the repo to be compatible with the Keymap Editor from Nick Coutsos. Right now the 
+left half works, but there seems to be an issue with the pinout for the right half of the keyboard. I'm thinking this is due to the differences in pinout for different sizes of the keyboard (e.g. the keymap editor only sees the "Large - L" version of the flake, but I'm using the "Medium - M" version, which has one fewer rows of keys.
 
-<img alt="keymap" width="100%" src="./keymap.svg">
+I had hoped to keep the repository general so that it would work with all variations of the keyboard, but I may need to make it specific to the M version.
+
+Use at your own risk.
+
+
+
