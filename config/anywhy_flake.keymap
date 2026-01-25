@@ -169,19 +169,18 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Alpha {
+        base {
             bindings = <
 &kp ESC    &kp N1    &kp N2    &kp N3     &kp N4     &kp N5    &kp N6  &kp N7     &kp N8     &kp N9    &kp N0     &kp MINUS
-&kp ENTER   &kp B     &kp L  &kp D        &kp W               &kp Z                 &AposUnderscore  &kp F                   &kp O          &kp U       &kp J           &kp SEMICOLON
-&kp BACKSLASH     &kp N     &kp R  &kp T        &kp S               &kp G                 &kp Y            &kp H                   &kp A          &kp E       &kp I           &CommaQuestion
-&kp LEFT_CONTROL  &kp Q     &kp X  &kp M        &kp C               &kp V                 &kp K            &kp P                   &kp PERIOD     &dashquote  &SlashLessThan  &kp RIGHT_ALT
+&kp ENTER  &kp Q     &kp W     &kp E      &kp R      &kp T     &kp Y   &kp U      &kp I      &kp O     &kp P      &kp BSPC
+&kp TAB    &kp A     &kp S     &kp D      &kp F      &kp G     &kp H   &kp J      &kp K      &kp L     &kp SEMI   &kp APOS
+&kp LBKT   &kp Z     &kp X     &kp C      &kp V      &kp B     &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RBKT
            &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo 1     &mo 2   &kp LSHFT  &kp LGUI   &kp LALT  &kp LCTRL
             >;
         };
 
-        Number {
+        num {
             bindings = <
-
 &none  &none     &none          &none      &none      &none       &none      &none   &none   &none   &none      &none
 &none  &kp ESC   &kp BACKSPACE  &kp TAB    &kp ENTER  &kp DEL     &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp MINUS  &none
 &none  &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHFT  &kp LBKT    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp N0     &none
@@ -190,7 +189,7 @@
             >;
         };
 
-        Function {
+        fn {
             bindings = <
 &none  &none    &none   &none   &none   &none             &none  &none       &none         &none         &none         &none
 &none  &kp F12  &kp F7  &kp F8  &kp F9  &soft_off         &bt2   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_UP  &none
@@ -206,7 +205,8 @@
 &kp CAPS   &kp TAB    &kp Q   &kp W   &kp E      &kp R     &kp Y   &kp U      &kp I      &kp O     &kp P      &kp BSPC
 &kp ENTER  &kp LSHFT  &kp A   &kp S   &kp D      &kp F     &kp H   &kp J      &kp K      &kp L     &kp SEMI   &kp APOS
 &kp LBKT   &kp LCTRL  &kp Z   &kp X   &kp C      &kp V     &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RBKT
-           &kp T      &kp G   &kp B   &kp SPACE  &mo 4     &mo 2   &kp LSHFT  &kp LGUI   &kp LALT  &kp LCTRL&trans            >;
+           &kp T      &kp G   &kp B   &kp SPACE  &mo 4     &mo 2   &kp LSHFT  &kp LGUI   &kp LALT  &kp LCTRL
+            >;
         };
 
         gaming_num {
@@ -214,8 +214,9 @@
 &trans  &trans   &trans    &trans    &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp ESC  &kp BSPC  &kp CAPS  &kp ENTER  &kp DEL    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp N1   &kp N2    &kp N3    &kp N4     &kp N5     &trans  &trans  &trans  &trans  &trans  &trans
-
-        &trans   &kp N6    &kp N7    &kp N8     &kp N9     &kp N0  &trans  &trans  &trans  &trans            >;
+&trans  &kp N6   &kp N7    &kp N8    &kp N9     &kp N0     &trans  &trans  &trans  &trans  &trans  &trans
+        &trans   &trans    &trans    &trans     &trans     &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
