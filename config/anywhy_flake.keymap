@@ -126,11 +126,11 @@
 
         base {
             bindings = <
-&kp ESC    &kp N1    &kp N2    &kp N3     &kp N4     &kp N5    &kp N6  &kp N7     &kp N8     &kp N9    &kp N0     &kp MINUS
-&kp ENTER  &kp Q     &kp W     &kp E      &kp R      &kp T     &kp Y   &kp U      &kp I      &kp O     &kp P      &kp BSPC
-&kp TAB    &kp A     &kp S     &kp D      &kp F      &kp G     &kp H   &kp J      &kp K      &kp L     &kp SEMI   &kp APOS
-&kp LBKT   &kp Z     &kp X     &kp C      &kp V      &kp B     &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RBKT
-           &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo 1     &mo 2   &kp LSHFT  &kp LGUI   &kp LALT  &kp LCTRL
+&kp ESC    &kp N1    &kp N2    &kp N3     &kp N4     &kp N5    &kp N6   &kp N7     &kp N8      &kp N9     &kp N0      &kp MINUS
+&kp ESC    &kp B     &kp L     &kp D      &kp W      &kp Z     &kp SQT  &kp F      &kp O       &kp U      &kp J       &kp SEMI
+&kp BSLH   &kp N     &kp R     &kp S      &kp T      &kp G     &kp Y    &kp H      &kp A       &kp E      &kp I       &kp FSLH
+&kp LCTRL  &kp Q     &kp X     &kp M      &kp C      &kp V     &kp K    &kp P      &kp LS(GT)  &kp MINUS  &kp LS(LT)  &kp RALT
+           &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo 1     &mo 2    &kp LSHFT  &kp LGUI    &kp LALT   &kp LCTRL
             >;
         };
 
