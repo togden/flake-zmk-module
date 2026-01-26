@@ -119,6 +119,51 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        AposUnderscore: AposUnderscore {
+            compatible = "zmk,behavior-mod-morph";
+            label = "APOSUNDERSCORE";
+            bindings = <&kp SQT>, <&kp UNDER>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        CommaQuestion: CommaQuestion {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMAQUESTION";
+            bindings = <&kp KP_COMMA>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dashquote: dashquote {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DASHQUOTE";
+            bindings = <&kp KP_MINUS>, <&kp DOUBLE_QUOTES>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        SlashLessThan: SlashLessThan {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLASHLESSTHAN";
+            bindings = <&kp KP_SLASH>, <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        SpaceNum: SpaceNum {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACENUM";
+            bindings = <&lt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
