@@ -132,7 +132,7 @@
         CommaQuestion: CommaQuestion {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMAQUESTION";
-            bindings = <&kp KP_COMMA>, <&kp QUESTION>;
+            bindings = <&kp KP_COMMA>, <&kp LS(SLASH)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -141,7 +141,7 @@
         dashquote: dashquote {
             compatible = "zmk,behavior-mod-morph";
             label = "DASHQUOTE";
-            bindings = <&kp KP_MINUS>, <&kp DOUBLE_QUOTES>;
+            bindings = <&kp KP_MINUS>, <&kp LS(SINGLE_QUOTE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -150,7 +150,7 @@
         SlashLessThan: SlashLessThan {
             compatible = "zmk,behavior-mod-morph";
             label = "SLASHLESSTHAN";
-            bindings = <&kp KP_SLASH>, <&kp LESS_THAN>;
+            bindings = <&kp SLASH>, <&kp LESS_THAN>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -171,11 +171,11 @@
 
         base {
             bindings = <
-&none      &none     &none     &none        &none               &none    &none            &none                  &none           &none       &none           &none
-&kp ESC    &kp B     &kp L     &kp D        &kp W               &kp Z    &AposUnderscore  &kp F                  &kp O           &kp U       &kp J           &kp SEMI
-&kp BSLH   &kp N     &kp R     &kp S        &kp T               &kp G    &kp Y            &kp H                  &kp A           &kp E       &kp I           &CommaQuestion
-&kp LCTRL  &kp Q     &kp X     &kp M        &kp C               &kp V    &kp K            &kp P                  &kp LS(PERIOD)  &dashquote  &SlashLessThan  &kp RALT
-           &kp LGUI  &kp LALT  &lt 1 SPACE  &mt LEFT_SHIFT TAB  &mo 1    &mo 2            &mt RIGHT_SHIFT ENTER  &kp BACKSPACE   &kp DELETE  &kp LCTRL
+&none      &none     &none     &none        &none               &none    &none            &none                  &none          &none       &none           &none
+&kp ESC    &kp B     &kp L     &kp D        &kp W               &kp Z    &AposUnderscore  &kp F                  &kp O          &kp U       &kp J           &kp SEMI
+&kp BSLH   &kp N     &kp R     &kp S        &kp T               &kp G    &kp Y            &kp H                  &kp A          &kp E       &kp I           &CommaQuestion
+&kp LCTRL  &kp Q     &kp X     &kp M        &kp C               &kp V    &kp K            &kp P                  &kp PERIOD     &dashquote  &SlashLessThan  &kp RALT
+           &kp LGUI  &kp LALT  &lt 1 SPACE  &mt LEFT_SHIFT TAB  &mo 1    &mo 2            &mt RIGHT_SHIFT ENTER  &kp BACKSPACE  &kp DELETE  &kp LCTRL
             >;
         };
 
