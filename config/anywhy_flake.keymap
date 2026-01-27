@@ -132,7 +132,7 @@
         CommaQuestion: CommaQuestion {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMAQUESTION";
-            bindings = <&kp KP_COMMA>, <&kp LS(SLASH)>;
+            bindings = <&kp COMMA>, <&kp LS(SLASH)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
